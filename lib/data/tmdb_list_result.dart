@@ -5,7 +5,7 @@ class TmdbListResult<T> {
   late final int totalPages;
   late final int totalResults;
 
-  TmdbListResult fromJson(Map<String, dynamic> json) => TmdbListResult()
+  static TmdbListResult fromJson(Map<String, dynamic> json) => TmdbListResult()
     ..page = json['page'] as int
     ..results = json['results']
     ..totalPages = json['total_pages'] as int

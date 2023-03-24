@@ -29,7 +29,7 @@ class TrendingData {
   @JsonKey(name: 'vote_count')
   late final num voteCount;
 
-  TrendingData fromJson(Map<String, dynamic> json) =>
+  static TrendingData fromJson(Map<String, dynamic> json) =>
       _$TrendingDataFromJson(json);
 
   Map<String, dynamic> toJson() => _$TrendingDataToJson(this);
